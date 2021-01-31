@@ -1,4 +1,5 @@
 # Habit Bear
+Simple habit tracking webpage application with a cute incentive program.
 
 ## Try It
 
