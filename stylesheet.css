@@ -8,7 +8,7 @@
 /* habit bear title */
 h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 500%;
     color: rgb(182, 138, 120);
     font-family: ChickenPie;
     /*background-color: rgba(182, 138, 120, 0.651); */
@@ -27,25 +27,24 @@ th {
     background-color: rgb(182, 138, 120);
     border: 1px solid rgb(80, 50, 48);
     padding: 18px;
+    font-family: 'Varela Round';
+    font-size: 120%;
 }
 /* row cell */
 tr {
     border-collapse: collapse;
     border: 2px solid rgb(80, 50, 48);
+    font-family: 'Varela Round';
+    background-color: rgb(223, 201, 191);
 }
 tr:nth-of-type(even) {
-    background-color: rgb(194, 157, 141);
+    background-color: rgb(202, 166, 151);
 }
 /* cell */
 td {
     border: 0.5px solid rgb(80, 50, 48);
     border-collapse: collapse;
     padding: 18px;
-}
-
-.center{
-    margin-left: auto;
-    margin-right: auto;
 }
 
 input[type="text"] {
