@@ -8,11 +8,13 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> 
     </head>
 
-    <body style="background-color:rgb(233,218,205);">
+    <body style="background-color:rgb(233,218,205)" onload="openPage()" onunload="closePage()">
         <h1>HABIT BEAR</h1>
         <div style="display:block; margin:auto;">
             <input type="text" id="habitName" placeholder="enter habit">
+            <!-- <input type="text" id="habitFreq" style="width:4%" placeholder="frequency"> -->
             <input type="button" value="+ add" style="background: rgb(80, 50, 48); color:white; padding:1px;" onclick="newHabit('myTable')">
+            <input type="button" value="reset" style="background: rgb(80, 50, 48); color:white; padding:1px;" onclick="reset()">
         </div>
         <p></p>
         <table id='myTable' class="center">
