@@ -1,5 +1,6 @@
 # Habit Bear
 Simple habit tracking webpage application with a cute incentive program.
+Uses browser's local storage to save the state of webpage for continous use.
 
 ## Try It
 
@@ -9,5 +10,4 @@ Simple habit tracking webpage application with a cute incentive program.
 ## To-Do
 
   - Add incentive program (bear)
-  - Use html5 local cache storage to save the state of the page when you close/open it
   - Be able to remove habits
