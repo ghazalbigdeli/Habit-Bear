@@ -8,30 +8,20 @@ function newHabit(tableID){
     if(name != ''){
         var table = document.getElementById(tableID);
         var row = table.insertRow(-1);
+
         // create cells and add event listeners
         var cell1 = row.insertCell(0);
         cell1.innerHTML = name;
-        var cell2 = row.insertCell(1);
-        cell2.addEventListener("click", toggleComplete);
-        var cell3 = row.insertCell(2);
-        cell3.addEventListener("click", toggleComplete);
-        var cell4 = row.insertCell(3);
-        cell4.addEventListener("click", toggleComplete);
-        var cell5 = row.insertCell(4);
-        cell5.addEventListener("click", toggleComplete);
-        var cell6 = row.insertCell(5);
-        cell6.addEventListener("click", toggleComplete);
-        var cell7 = row.insertCell(6);
-        cell7.addEventListener("click", toggleComplete);
-        var cell8 = row.insertCell(7);
-        cell8.addEventListener("click", toggleComplete);
+
+        for (var i = 1; i < 8; i++){
+            var cell = row.insertCell(i);
+            cell.addEventListener("click", toggleComplete);
+        }
     }
 }
 
 /* when a cell is clicked */
 function toggleComplete(){
-    var col = window.event.target.cellIndex;
-    var row = window.event.target.parentNode.rowIndex;
     cell = window.event.target;
     // if cell is empty, add heart
     if (cell.innerHTML == ""){
@@ -62,7 +52,7 @@ function openPage(){
     }
 }
 
-// re-add event listeners upon onload
+/* re-add event listeners upon onload */
 function setUp(){
     var table = document.getElementById('myTable');
     for (var r = 0; r < table.rows.length; r++){
@@ -72,7 +62,7 @@ function setUp(){
     }
 }
 
-// reset table contents
+/* reset table contents */
 function reset(){
     var clear_state = localStorage.getItem('clear state');
     document.body.innerHTML = clear_state;
