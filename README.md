@@ -4,8 +4,8 @@ Uses browser's local storage to save the state of webpage for continous use.
 
 ## Try It
 
-1. Download the files as a .zip
-2. Open main.html
+1. Download the files
+2. Unzip files and open main.html
 
 ## To-Do
 
