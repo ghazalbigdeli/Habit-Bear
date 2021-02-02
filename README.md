@@ -10,4 +10,4 @@ Uses browser's local storage to save the state of webpage for continous use.
 ## To-Do
 
   - Add incentive program (bear)
-  - Be able to remove habits
+  - Be able to remove individual habits
