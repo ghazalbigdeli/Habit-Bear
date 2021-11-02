@@ -2,9 +2,9 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
         <title>habit bear</title>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> 
     </head>
 
@@ -13,8 +13,8 @@
         <div style="display:block; margin:auto;">
             <input type="text" id="habitName" placeholder="enter habit">
             <!-- <input type="text" id="habitFreq" style="width:4%" placeholder="frequency"> -->
-            <input type="button" value="+ add" style="background: rgb(80, 50, 48); color:white; padding:1px;" onclick="newHabit('myTable')">
-            <input type="button" value="reset" style="background: rgb(80, 50, 48); color:white; padding:1px;" onclick="reset()">
+            <input type="button" value="+ add" onclick="newHabit('myTable')">
+            <input type="button" value="reset" onclick="reset()">
         </div>
         <p></p>
         <table id='myTable'>

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'ChickenPie';
+    src: url('ChickenPie-8MevB.woff2') format('woff2'),
+         url('ChickenPie-8MevB.woff') format('woff'),
+         url('ChickenPie-8MevB.ttf')  format('truetype');
+}
+
+/* habit bear title */
+h1 {
+    text-align: center;
+    font-size: 500%;
+    color: rgb(182, 138, 120);
+    font-family: ChickenPie;
+    /*background-color: rgba(182, 138, 120, 0.651); */
+    margin-top:0
+}  
+
+/* table containing habits */
+table {
+    margin:0 auto;
+    border-collapse: collapse;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.15);
+}
+/* header cell */
+th {
+    border-collapse: collapse;
+    background-color: rgb(182, 138, 120);
+    border: 1px solid rgb(80, 50, 48);
+    padding: 18px;
+    font-family: 'Varela Round';
+    font-size: 120%;
+    width: 40px;
+}
+/* row cell */
+tr {
+    border-collapse: collapse;
+    border: 2px solid rgb(80, 50, 48);
+    font-family: 'Varela Round';
+    background-color: rgb(219, 193, 183);
+}
+tr:nth-of-type(even) {
+    background-color: rgb(202, 166, 151);
+}
+/* cell */
+td {
+    border: 0.5px solid rgb(80, 50, 48);
+    border-collapse: collapse;
+    text-align: center;
+    mix-blend-mode: multiply;
+    height: 70px;
+}
+
+input[type="text"] {
+    width: 8%;
+    display: inline-block;
+}
+
+input[type="button"] {
+    width: 3%;
+    display: inline-block;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* buttons */
+input[type=button]{
+    background:rgb(80, 50, 48);
+}

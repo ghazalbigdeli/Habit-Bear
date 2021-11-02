@@ -25,7 +25,7 @@ function toggleComplete(){
     cell = window.event.target;
     // if cell is empty, add heart
     if (cell.innerHTML == ""){
-        cell.innerHTML = '<img src="bear.png" width="48" height="37" style="pointer-events:none"/>';
+        cell.innerHTML = '<img src="images/bear.png" width="48" height="37" style="pointer-events:none"/>';
     } else { // if cell is not empty, remove heart
         cell.innerHTML = "";
     }
